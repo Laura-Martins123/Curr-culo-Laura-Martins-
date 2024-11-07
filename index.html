@@ -24,21 +24,14 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-imagem-canto {
+.imagem-canto {
     position: absolute;
     top: 0;
     left: 0;
-    width: 400px; 
+    width: 10vw; /* Tornar a imagem flexível em relação à largura da tela */
     height: auto;
     border-radius: 100%;
     margin: 30px;
-}
-
-@media (max-width: 768px) {
-    .imagem-canto {
-        width: 150px;  
-        margin: 15px; 
-    }
 }
 
 .container {
@@ -76,7 +69,7 @@ header {
     align-items: center;
     gap: 30px;
     margin-top: 30px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap; /* Para que o conteúdo se ajuste em telas menores */
 }
 
 .all {
@@ -187,7 +180,7 @@ p {
     </style>
 </head>
 <body>
-    <img src="me.jpeg" alt="Imagem" class="imagem-canto">
+    <img src="img/me.jpeg" alt="Imagem" class="imagem-canto">
 
     <header>
         <div class="name">Laura Martins</div>
