@@ -24,19 +24,14 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.imagem-canto {
-    position: relative;  /* Mudei de absolute para relative para evitar sobreposição */
-    width: 200px;  /* Ajuste inicial da largura */
-    height: auto;
-    border-radius: 100%;
-    margin: 20px;
-}
-
-@media (max-width: 768px) {
-    .imagem-canto {
-        width: 150px;  /* Menor em telas pequenas */
-        margin: 15px;   /* Ajusta a margem para evitar sobreposição */
-    }
+.container {
+    display: flex;
+    flex-direction: column;  /* Permite que o conteúdo fique empilhado */
+    align-items: center;  /* Centraliza o conteúdo */
+    max-width: 1200px;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
 }
 
 .container {
