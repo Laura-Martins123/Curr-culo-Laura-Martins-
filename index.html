@@ -25,13 +25,18 @@ body {
 }
 
 .imagem-canto {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30vw; /* Tornar a imagem flexível em relação à largura da tela */
+    position: relative;  /* Mudei de absolute para relative para evitar sobreposição */
+    width: 200px;  /* Ajuste inicial da largura */
     height: auto;
     border-radius: 100%;
-    margin: 30px;
+    margin: 20px;
+}
+
+@media (max-width: 768px) {
+    .imagem-canto {
+        width: 150px;  /* Menor em telas pequenas */
+        margin: 15px;   /* Ajusta a margem para evitar sobreposição */
+    }
 }
 
 .container {
